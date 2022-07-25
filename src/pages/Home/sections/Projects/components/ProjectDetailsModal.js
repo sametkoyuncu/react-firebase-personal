@@ -60,7 +60,7 @@ export default function BlogDetailsModal({ blog, ActionLink }) {
             <Grid item xs={12} md={8}>
               <Box sx={{ display: 'flex', justifyContent: 'end' }}>
                 <IconButton aria-label="close" onClick={handleClose}>
-                  <CloseIcon sx={{ color: '#D61C4E' }} />
+                  <CloseIcon />
                 </IconButton>
               </Box>
               <Box px={1}>

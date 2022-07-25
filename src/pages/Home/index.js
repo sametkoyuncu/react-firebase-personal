@@ -8,7 +8,7 @@ import Hero from './sections/Hero'
 // assests
 import { boxShadow, borderRadiusForCard } from '../../assets/theme/baseStyles'
 import About from './sections/About'
-import Blog from './sections/Blog'
+import Projects from './sections/Projects'
 
 const Home = () => {
   return (
@@ -29,7 +29,7 @@ const Home = () => {
         <Box sx={{ maxWidth: { sm: '85%', md: '60%' }, margin: '0 auto' }}>
           <About />
         </Box>
-        <Blog />
+        <Projects />
       </Container>
     </div>
   )

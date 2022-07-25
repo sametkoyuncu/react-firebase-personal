@@ -72,7 +72,7 @@ const blogs = [
   },
 ]
 
-const Blog = () => {
+const Projects = () => {
   return (
     <SectionContainer id="projects">
       <Box
@@ -108,4 +108,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default Projects

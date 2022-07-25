@@ -14,7 +14,7 @@ import {
 } from '../../../../../assets/theme/baseStyles'
 
 // my components
-import BlogDetailsModal from './BlogDetailsModal'
+import ProjectDetailsModal from './ProjectDetailsModal'
 import CardTitle from '../../../../../components/CardTitle'
 import CardDescription from '../../../../../components/CardDescription'
 import Tags from '../../../../../components/Tags'
@@ -105,7 +105,7 @@ const Card = ({ blog }) => {
           </ActionIcon>{' '}
           &nbsp;{blog.likesCount}
         </ActionIconSpan>
-        <BlogDetailsModal blog={blog} ActionLink={ActionLink} />
+        <ProjectDetailsModal blog={blog} ActionLink={ActionLink} />
       </Actions>
     </Box>
   )

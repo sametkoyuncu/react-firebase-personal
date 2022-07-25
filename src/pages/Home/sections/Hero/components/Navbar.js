@@ -22,8 +22,8 @@ const pages = [
     path: '#projects',
   },
   {
-    name: 'Blog',
-    path: '#blog',
+    name: 'Galeri',
+    path: '#gallery',
   },
   {
     name: 'İletişim',
