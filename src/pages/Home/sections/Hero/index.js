@@ -9,7 +9,7 @@ import Navbar from './components/Navbar'
 // assets
 import BgImage from '../../../../assets/images/bg-coworking.jpeg'
 
-const Hero = () => {
+const Hero = ({ isScrolled }) => {
   return (
     <Box
       sx={{
@@ -27,7 +27,7 @@ const Hero = () => {
           backgroundColor: 'rgba(0,0,0,0.5)',
         }}
       >
-        <Navbar />
+        <Navbar isScrolled={isScrolled} />
       </Box>
     </Box>
   )

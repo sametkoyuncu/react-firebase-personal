@@ -82,7 +82,7 @@ const Projects = () => {
           alignItems: { xs: 'center', sm: 'start' },
           justifyContent: 'center',
           margin: '0 auto',
-          marginTop: '75px',
+          marginTop: '100px',
           marginBottom: '75px',
           maxWidth: { xs: '95%', md: '85%' },
         }}

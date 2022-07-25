@@ -12,6 +12,9 @@ import Tooltip from '@mui/material/Tooltip'
 import MenuItem from '@mui/material/MenuItem'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle'
 
+// assets
+import { boxShadow } from '../../../../../assets/theme/baseStyles'
+
 const pages = [
   {
     name: 'Hakkımda',
@@ -22,17 +25,13 @@ const pages = [
     path: '#projects',
   },
   {
-    name: 'Galeri',
-    path: '#gallery',
-  },
-  {
     name: 'İletişim',
     path: '#contact',
   },
 ]
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout']
 
-const Navbar = () => {
+const Navbar = ({ isScrolled }) => {
   const [anchorElNav, setAnchorElNav] = useState(null)
   const [anchorElUser, setAnchorElUser] = useState(null)
 
@@ -51,14 +50,22 @@ const Navbar = () => {
     setAnchorElUser(null)
   }
 
+  const bgColor = isScrolled ? 'rgba(0, 0, 0, 0.4)' : 'transparent'
+  const navShadow = isScrolled ? boxShadow : 'none'
+
   return (
     <AppBar
-      position="static"
-      sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}
+      position="fixed"
+      sx={{
+        transition: 'all 0.4s ease-in-out',
+        backgroundColor: bgColor,
+        top: 0,
+        left: 0,
+        boxShadow: navShadow,
+      }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* <CodeIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
@@ -140,13 +147,18 @@ const Navbar = () => {
           >
             sk.
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: 'none', md: 'flex' },
+            }}
+          >
             {pages.map((page) => (
               <Button
                 key={page.name}
                 onClick={handleCloseNavMenu}
                 sx={{
-                  my: 2,
+                  my: 1,
                   color: 'white',
                   display: 'block',
                   textTransform: 'capitalize',
@@ -157,7 +169,10 @@ const Navbar = () => {
                 }}
               >
                 <a
-                  style={{ color: 'inherit', textDecoration: 'inherit' }}
+                  style={{
+                    color: 'inherit',
+                    textDecoration: 'inherit',
+                  }}
                   href={page.path}
                 >
                   {page.name}

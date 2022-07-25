@@ -36,7 +36,6 @@ const Actions = styled('div')({
   margin: '5px 0',
   padding: '0',
   color: 'rgb(123, 128, 154)',
-  fontFamily: '"Roboto Slab", sans-serif',
 })
 
 const ActionIconSpan = styled('span')({
@@ -78,7 +77,7 @@ const ActionLink = styled('a')({
   cursor: 'pointer',
   '&:hover': {
     color: '#293462',
-    backgroundColor: 'rgba(41, 52, 98, 0.2)',
+    textDecoration: 'underline',
   },
 })
 

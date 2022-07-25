@@ -21,7 +21,7 @@ const Tag = styled('span')({
   fontWeight: '400',
   marginTop: '10px',
   marginRight: '5px',
-  padding: '8px 12px',
+  padding: '6px 12px',
   color: 'rgb(123, 128, 154)',
   transition: 'all 0.2s ease-in-out',
   fontFamily: '"Roboto Slab", sans-serif',
