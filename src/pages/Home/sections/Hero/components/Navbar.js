@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { useState } from 'react'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
@@ -7,19 +7,34 @@ import Typography from '@mui/material/Typography'
 import Menu from '@mui/material/Menu'
 import MenuIcon from '@mui/icons-material/Menu'
 import Container from '@mui/material/Container'
-import Avatar from '@mui/material/Avatar'
 import Button from '@mui/material/Button'
 import Tooltip from '@mui/material/Tooltip'
 import MenuItem from '@mui/material/MenuItem'
-// import CodeIcon from '@mui/icons-material/Code'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle'
 
-const pages = ['Hakkımda', 'Projelerim', 'Blog', 'İletişim']
+const pages = [
+  {
+    name: 'Hakkımda',
+    path: '#',
+  },
+  {
+    name: 'Projelerim',
+    path: '#projects',
+  },
+  {
+    name: 'Blog',
+    path: '#blog',
+  },
+  {
+    name: 'İletişim',
+    path: '#contact',
+  },
+]
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout']
 
 const Navbar = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null)
-  const [anchorElUser, setAnchorElUser] = React.useState(null)
+  const [anchorElNav, setAnchorElNav] = useState(null)
+  const [anchorElUser, setAnchorElUser] = useState(null)
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget)
@@ -92,8 +107,16 @@ const Navbar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">
+                    <a
+                      style={{ color: 'inherit', textDecoration: 'inherit' }}
+                      href={page.path}
+                    >
+                      {' '}
+                      {page.name}
+                    </a>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -109,7 +132,7 @@ const Navbar = () => {
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontFamily: 'Rooboto Slab',
-              fontWeight: 700,
+              fontWeight: 500,
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
@@ -120,16 +143,25 @@ const Navbar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                key={page}
+                key={page.name}
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
                   color: 'white',
                   display: 'block',
                   textTransform: 'capitalize',
+                  fontSize: '1.1rem',
+                  fontFamily: 'Oswald',
+                  fontWeight: 400,
+                  letterSpacing: '.05rem',
                 }}
               >
-                {page}
+                <a
+                  style={{ color: 'inherit', textDecoration: 'inherit' }}
+                  href={page.path}
+                >
+                  {page.name}
+                </a>
               </Button>
             ))}
           </Box>
