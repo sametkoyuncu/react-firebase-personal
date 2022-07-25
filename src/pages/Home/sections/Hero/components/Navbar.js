@@ -163,7 +163,7 @@ const Navbar = ({ isScrolled }) => {
                   display: 'block',
                   textTransform: 'capitalize',
                   fontSize: '1.1rem',
-                  fontFamily: 'Oswald',
+                  fontFamily: 'Roboto Slab',
                   fontWeight: 400,
                   letterSpacing: '.05rem',
                 }}

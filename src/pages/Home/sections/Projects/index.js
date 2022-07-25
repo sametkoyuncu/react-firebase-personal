@@ -83,7 +83,6 @@ const Projects = () => {
           justifyContent: 'center',
           margin: '0 auto',
           marginTop: '100px',
-          marginBottom: '75px',
           maxWidth: { xs: '95%', md: '85%' },
         }}
       >

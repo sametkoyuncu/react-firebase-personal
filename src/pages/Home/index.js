@@ -14,6 +14,7 @@ import { useWindowScrollPositions } from '../../hooks/useWindowScrollPositions'
 import { boxShadow, borderRadiusForCard } from '../../assets/theme/baseStyles'
 import About from './sections/About'
 import Projects from './sections/Projects'
+import Contact from './sections/Contact'
 
 const Home = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -42,6 +43,20 @@ const Home = () => {
           <About />
         </Box>
         <Projects />
+      </Container>
+      <Container
+        id="contact"
+        sx={{
+          maxWidth: { xs: '90%', sm: '80%' },
+          backgroundColor: 'rgba(255, 255, 255, 0.95)',
+          borderRadius: borderRadiusForCard,
+          minHeight: '300px',
+          marginBottom: '75px',
+          boxShadow,
+          padding: '0px !important',
+        }}
+      >
+        <Contact />
       </Container>
     </div>
   )
