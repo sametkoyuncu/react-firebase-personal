@@ -100,6 +100,7 @@ const Projects = () => {
         <ActionLink
           href="https://github.com/sametkoyuncu?tab=repositories"
           target="_blank"
+          rel="noreferrer"
         >
           Daha fazlası için tıklayınız..
         </ActionLink>

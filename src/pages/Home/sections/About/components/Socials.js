@@ -66,7 +66,7 @@ const Socials = () => {
       <ul>
         {accounts.map((account) => (
           <ListItem key={account.name}>
-            <Account href={account.url} target="_blank">
+            <Account href={account.url} target="_blank" rel="noreferrer">
               {account.icon}
             </Account>
           </ListItem>

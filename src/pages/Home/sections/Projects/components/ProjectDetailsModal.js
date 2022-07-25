@@ -108,6 +108,7 @@ export default function BlogDetailsModal({ blog, ActionLink }) {
                   <LinkButton
                     href="https://github.com/sametkoyuncu"
                     target="_blank"
+                    rel="noreferrer"
                     sx={{ marginRight: '5px' }}
                   >
                     <VisibilityIcon sx={{ marginRight: '5px' }} />
@@ -116,6 +117,7 @@ export default function BlogDetailsModal({ blog, ActionLink }) {
                   <LinkButton
                     href="https://github.com/sametkoyuncu"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <GitHubIcon sx={{ marginRight: '5px' }} />
                     Kodu İncele
