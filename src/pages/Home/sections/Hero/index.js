@@ -1,5 +1,3 @@
-import React from 'react'
-
 // mui.js components
 import Box from '@mui/material/Box'
 

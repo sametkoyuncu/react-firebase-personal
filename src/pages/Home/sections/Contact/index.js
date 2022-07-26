@@ -13,6 +13,7 @@ import {
 import Socials from './components/Socials'
 import Form from './components/Form'
 
+// styled components
 const ImageBox = styled('div')({
   width: '100%',
   minHeight: '300px',

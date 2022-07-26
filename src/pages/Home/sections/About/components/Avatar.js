@@ -1,5 +1,5 @@
+// mui.js components
 import { Box } from '@mui/material'
-import React from 'react'
 
 // assets
 import Image from '../../../../../assets/images/avatar.png'

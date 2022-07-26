@@ -13,15 +13,17 @@ import CloseIcon from '@mui/icons-material/Close'
 import VisibilityIcon from '@mui/icons-material/Visibility'
 import GitHubIcon from '@mui/icons-material/GitHub'
 
+// my components
+import CardTitle from '../../../../../components/CardTitle'
+import CardDescription from '../../../../../components/CardDescription'
+import Tags from '../../../../../components/Tags'
+import { LikeIcon, LikeSpan, LinkButton } from './ModalButtons'
+
 // assets
 import {
   borderRadiusForCard,
   boxShadow,
 } from '../../../../../assets/theme/baseStyles'
-import CardTitle from '../../../../../components/CardTitle'
-import CardDescription from '../../../../../components/CardDescription'
-import Tags from '../../../../../components/Tags'
-import { LikeIcon, LikeSpan, LinkButton } from './ModalButtons'
 
 // styled components
 const Image = styled('img')({

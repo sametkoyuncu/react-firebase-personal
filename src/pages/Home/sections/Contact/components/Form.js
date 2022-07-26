@@ -1,14 +1,16 @@
-import * as React from 'react'
+// mui.js components
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 import Grid from '@mui/material/Grid'
 import { styled } from '@mui/system'
 
+// assets
 import {
   boxShadow,
   borderRadiusForCard,
 } from '../../../../../assets/theme/baseStyles'
 
+// styled components
 const Button = styled('a')({
   type: 'submit',
   display: 'inline-flex',

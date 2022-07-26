@@ -10,15 +10,15 @@ import FavoriteIcon from '@mui/icons-material/Favorite'
 
 // sections
 import Hero from './sections/Hero'
+import About from './sections/About'
+import Projects from './sections/Projects'
+import Contact from './sections/Contact'
 
 // hooks
 import { useWindowScrollPositions } from '../../hooks/useWindowScrollPositions'
 
 // assests
 import { boxShadow, borderRadiusForCard } from '../../assets/theme/baseStyles'
-import About from './sections/About'
-import Projects from './sections/Projects'
-import Contact from './sections/Contact'
 
 const Home = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -65,7 +65,7 @@ const Home = () => {
       <Box>
         <Typography
           color="textSecondary"
-          sx={{ textAlign: 'center', alignItems: 'center', margin: '10px 0' }}
+          sx={{ textAlign: 'center', alignItems: 'center', margin: '20px 0' }}
         >
           <a
             href="https://github.com/sametkoyuncu"

@@ -1,4 +1,6 @@
 import { useState } from 'react'
+
+// mui.js components
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
@@ -15,6 +17,7 @@ import MenuItem from '@mui/material/MenuItem'
 // assets
 import { boxShadow } from '../../../../../assets/theme/baseStyles'
 
+// data
 const pages = [
   {
     name: 'Hakkımda',

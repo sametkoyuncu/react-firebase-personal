@@ -11,7 +11,6 @@ const TagsContainer = styled('div')({
   alignItems: 'center',
   margin: '0',
   padding: '0',
-  color: 'rgb(123, 128, 154)',
   fontFamily: '"Roboto Slab", sans-serif',
 })
 

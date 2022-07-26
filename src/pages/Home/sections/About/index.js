@@ -1,4 +1,3 @@
-import React from 'react'
 // mui.js components
 import Box from '@mui/material/Box'
 import { styled } from '@mui/system'
@@ -7,6 +6,7 @@ import { styled } from '@mui/system'
 import Avatar from './components/Avatar'
 import Socials from './components/Socials'
 
+// styled components
 const Title = styled('p')({
   color: 'rgb(52, 71, 103)',
   padding: 8,

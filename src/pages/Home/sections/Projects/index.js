@@ -1,5 +1,3 @@
-import React from 'react'
-
 // mui.js components
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
@@ -33,6 +31,7 @@ const ActionLink = styled('a')({
   },
 })
 
+// data
 const projects = [
   {
     title: 'ColorTown App',
