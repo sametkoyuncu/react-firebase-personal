@@ -3,6 +3,10 @@ import { useState, useEffect } from 'react'
 // mui.js components
 import Container from '@mui/material/Container'
 import Box from '@mui/material/Box'
+import Typography from '@mui/material/Typography'
+
+// icons
+import FavoriteIcon from '@mui/icons-material/Favorite'
 
 // sections
 import Hero from './sections/Hero'
@@ -58,6 +62,30 @@ const Home = () => {
       >
         <Contact />
       </Container>
+      <Box>
+        <Typography
+          color="textSecondary"
+          sx={{ textAlign: 'center', alignItems: 'center', margin: '10px 0' }}
+        >
+          <a
+            href="https://github.com/sametkoyuncu"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              fontWeight: 'bold',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          >
+            Samet Koyuncu
+          </a>{' '}
+          tarafından{' '}
+          <FavoriteIcon
+            sx={{ color: '#D61C4E', position: 'relative', bottom: '-5px' }}
+          />{' '}
+          ile oluşturulmuştur.
+        </Typography>
+      </Box>
     </div>
   )
 }

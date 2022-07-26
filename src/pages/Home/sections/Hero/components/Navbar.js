@@ -8,9 +8,9 @@ import Menu from '@mui/material/Menu'
 import MenuIcon from '@mui/icons-material/Menu'
 import Container from '@mui/material/Container'
 import Button from '@mui/material/Button'
-import Tooltip from '@mui/material/Tooltip'
 import MenuItem from '@mui/material/MenuItem'
-import AccountCircleIcon from '@mui/icons-material/AccountCircle'
+// import Tooltip from '@mui/material/Tooltip'
+// import SettingsSuggestOutlinedIcon from '@mui/icons-material/SettingsSuggestOutlined'
 
 // assets
 import { boxShadow } from '../../../../../assets/theme/baseStyles'
@@ -29,26 +29,27 @@ const pages = [
     path: '#contact',
   },
 ]
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout']
+// const settings = ['Dashboard', 'Login']
 
 const Navbar = ({ isScrolled }) => {
   const [anchorElNav, setAnchorElNav] = useState(null)
-  const [anchorElUser, setAnchorElUser] = useState(null)
+  // const [anchorElUser, setAnchorElUser] = useState(null)
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget)
   }
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget)
-  }
+
+  // const handleOpenUserMenu = (event) => {
+  //   setAnchorElUser(event.currentTarget)
+  // }
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null)
   }
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null)
-  }
+  // const handleCloseUserMenu = () => {
+  //   setAnchorElUser(null)
+  // }
 
   const bgColor = isScrolled ? 'rgba(0, 0, 0, 0.4)' : 'transparent'
   const navShadow = isScrolled ? boxShadow : 'none'
@@ -163,7 +164,7 @@ const Navbar = ({ isScrolled }) => {
                   display: 'block',
                   textTransform: 'capitalize',
                   fontSize: '1.1rem',
-                  fontFamily: 'Roboto Slab',
+                  fontFamily: 'Roboto',
                   fontWeight: 400,
                   letterSpacing: '.05rem',
                 }}
@@ -181,11 +182,10 @@ const Navbar = ({ isScrolled }) => {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                {/* <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" /> */}
-                <AccountCircleIcon
+                <SettingsSuggestOutlinedIcon
                   sx={{ color: '#FFF', width: '32px', height: '32px' }}
                 />
               </IconButton>
@@ -212,7 +212,7 @@ const Navbar = ({ isScrolled }) => {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
