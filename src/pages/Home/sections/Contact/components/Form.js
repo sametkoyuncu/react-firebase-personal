@@ -10,6 +10,7 @@ import {
 } from '../../../../../assets/theme/baseStyles'
 
 const Button = styled('a')({
+  type: 'submit',
   display: 'inline-flex',
   alignItems: 'center',
   fontSize: '1.2rem',
@@ -31,12 +32,18 @@ const Button = styled('a')({
   },
 })
 
+const handleSent = (e) => {
+  e.preventDefault()
+  console.log('submit')
+}
+
 export default function Form() {
   return (
     <Box>
       <Grid container spacing={2}>
         <Grid item xs={12} md={4}>
           <TextField
+            disabled
             fullWidth
             required
             id="name"
@@ -47,6 +54,7 @@ export default function Form() {
         </Grid>
         <Grid item xs={12} md={4}>
           <TextField
+            disabled
             fullWidth
             required
             id="email"
@@ -58,6 +66,7 @@ export default function Form() {
         </Grid>
         <Grid item xs={12} md={4}>
           <TextField
+            disabled
             fullWidth
             required
             id="subject"
@@ -69,6 +78,7 @@ export default function Form() {
       </Grid>
 
       <TextField
+        disabled
         fullWidth
         required
         id="message"
@@ -87,7 +97,9 @@ export default function Form() {
           mt: 3,
         }}
       >
-        <Button>Gönder</Button>
+        <Button onClick={handleSent} disabled>
+          Gönder
+        </Button>
       </Box>
     </Box>
   )

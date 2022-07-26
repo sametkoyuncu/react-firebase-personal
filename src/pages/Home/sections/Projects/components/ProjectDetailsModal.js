@@ -38,7 +38,7 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   bgcolor: 'background.paper',
-  width: { xs: '80%', sm: '60%', md: '50%', lg: '40%', xl: '30%' },
+  width: { xs: '80%', sm: '60%', md: '55%' },
   boxShadow,
   borderRadius: borderRadiusForCard,
   '&:focus': {
@@ -106,7 +106,7 @@ export default function BlogDetailsModal({ blog, ActionLink }) {
                 </Box>
                 <Box>
                   <LinkButton
-                    href="https://github.com/sametkoyuncu"
+                    href={blog.url}
                     target="_blank"
                     rel="noreferrer"
                     sx={{ marginRight: '5px' }}
@@ -115,7 +115,7 @@ export default function BlogDetailsModal({ blog, ActionLink }) {
                     Önizleme
                   </LinkButton>
                   <LinkButton
-                    href="https://github.com/sametkoyuncu"
+                    href={blog.githubUrl}
                     target="_blank"
                     rel="noreferrer"
                   >

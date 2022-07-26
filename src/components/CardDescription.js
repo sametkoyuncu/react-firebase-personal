@@ -7,6 +7,7 @@ const Description = styled('p')({
   padding: '0',
   color: 'rgb(123, 128, 154)',
   fontFamily: '"Roboto Slab", sans-serif',
+  lineHeight: '1.2',
 })
 
 const CardDescription = ({ children }) => {

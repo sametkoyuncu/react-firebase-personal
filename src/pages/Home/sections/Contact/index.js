@@ -66,7 +66,7 @@ const Contact = () => {
           <Overlay>
             <Title>Bana Ulaşın</Title>
             <Description>
-              Bana yandaki formdan yazabilir veya aşağıdaki bağlantılardan
+              Formu kullanarak bana yazabilir veya aşağıdaki bağlantılardan
               ulaşabilirsiniz.
             </Description>
             <Socials />

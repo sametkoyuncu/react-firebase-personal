@@ -8,6 +8,7 @@ import { styled } from '@mui/system'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import InstagramIcon from '@mui/icons-material/Instagram'
+import MailOutlineIcon from '@mui/icons-material/MailOutline'
 
 // assest
 import { boxShadow } from '../../../../../assets/theme/baseStyles'
@@ -49,6 +50,11 @@ const accounts = [
     name: 'Instagram',
     url: 'https://www.instagram.com/sametkoyuncu_/',
     icon: <InstagramIcon sx={iconStyles} />,
+  },
+  {
+    name: 'Mail',
+    url: 'mailto:sametkoyuncu@live.com',
+    icon: <MailOutlineIcon sx={iconStyles} />,
   },
 ]
 

@@ -33,42 +33,48 @@ const ActionLink = styled('a')({
   },
 })
 
-const blogs = [
+const projects = [
   {
-    title: 'The voodoo sacerdos flesh eater',
+    title: 'ColorTown App',
     description:
-      'Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.',
-    image: 'https://source.unsplash.com/random/500x200',
-    url: 'https://source.unsplash.com/random/500x200',
-    tags: ['React', 'Firebase', 'CSS'],
-    likesCount: 5,
+      'ColorTown, kullanıcıların sisteme kayıt olup rastgele renk, renk gradyanı veya renk paleti oluşturabileceği ve bu renkleri diğer kullanıcılarla paylaşabileceği bir uygulamadır.',
+    image:
+      'https://github.com/sametkoyuncu/react-colortown/blob/master/public/screenshots/colors.png?raw=true',
+    url: 'https://colortown.netlify.app/colors',
+    githubUrl: 'https://github.com/sametkoyuncu/react-colortown',
+    tags: ['React', 'Firebase', 'Mui.js'],
+    likesCount: 1,
   },
   {
-    title: 'Sicut zeder apathetic malus voodoo',
-    description:
-      'Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens. Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams. Pestilentia est plague haec decaying ambulabat mortuos. Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis. Alii missing oculis aliorum sicut serpere crabs nostram. Putridi braindead odores kill and infect, aere implent left four dead.',
-    image: 'https://source.unsplash.com/random/400x200',
-    url: 'https://source.unsplash.com/random/400x200',
-    tags: ['React', 'Firebase', 'CSS'],
-    likesCount: 0,
+    title: 'Book Search App',
+    description: `İSMEK, Zemin İstanbul, Kodluyoruz, Patika.dev ve Microsoft iş birliği ile gerçekleştirilen "Front-End Developer Eğitim Programı" için bitirme projesi olarak takım arkadaşlarım Nurselin Çavdar ve Onur Aylanç ile birlikte Book Searching adlı bir kitap arama uygulaması geliştirdik. Geliştirmiş olduğumuz uygulama ile kullanıcı kitap veya yazar ismi yazarak istediği kitabı arayabilecektir. Girilen sözcüğe uygun kitaplar listelenirken, bu kitaplara ait kısa bilgiler modal ile birlikte kullanıcıya sunulmaktadır. Kullanıcı, dilerse bu kitabın tüm detaylarına "preview" butonuna tıklayarak kolayca erişebilmektir.`,
+    image:
+      'https://github.com/nrslncvdr/book-search/raw/master/Screenshot_searching.png',
+    url: 'https://booksearchingg.netlify.app/',
+    githubUrl: 'https://github.com/nrslncvdr/book-search',
+    tags: ['React', 'Mui.js'],
+    likesCount: 3,
   },
   {
-    title: 'Kirkman Moore and Adlard caeruleum in locis',
+    title: 'Nodeblog',
     description:
-      'Lucio fulci tremor est dark vivos magna. Expansis creepy arm yof darkness ulnis witchcraft missing carnem armis Kirkman Moore and Adlard caeruleum in locis. Romero morbo Congress amarus in auras. Nihil horum sagittis tincidunt, zombie slack-jawed gelida survival portenta. The unleashed virus est, et iam zombie mortui ambulabunt super terram. Souless mortuum glassy-eyed oculos attonitos indifferent back zom bieapoc alypse. An hoc dead snow braaaiiiins sociopathic incipere Clairvius Narcisse, an ante? Is bello mundi z?',
-    image: 'https://source.unsplash.com/random/600x300',
-    url: 'https://source.unsplash.com/random/600x300',
-    tags: ['React', 'Firebase', 'CSS'],
+      'Node.js, express.js ve mongodb kullanarak geliştirmiş olduğum bir blog uygulamasıdır. Kullanıcı yönetim panelini kullanarak içerikler ekleyebilir, varolan içerikleri düzenleyebilir veya silebilir.',
+    image:
+      'https://github.com/sametkoyuncu/nodeblog/blob/main/screenshots/homepageSmall2.png?raw=true',
+    url: 'https://node-js-blog-app.herokuapp.com/',
+    githubUrl: 'https://github.com/sametkoyuncu/nodeblog',
+    tags: ['Node.js', 'MongoDB'],
     likesCount: 8,
   },
   {
-    title: 'In Craven omni memoria patriae zombieland',
-    description:
-      'In Craven omni memoria patriae zombieland clairvius narcisse religionis sunt diri undead historiarum. Golums, zombies unrelenting et Raimi fascinati beheading. Maleficia! Vel cemetery man a modern bursting eyeballs perhsaps morbi. A terrenti flesh contagium. Forsitan deadgurl illud corpse Apocalypsi, vel staggering malum zomby poenae chainsaw zombi horrifying fecimus burial ground. Indeflexus shotgun coup de poudre monstra per plateas currere. Fit de decay nostra carne undead. Poenitentiam violent zom biehig hway agite RE:dead pœnitentiam! Vivens mortua sunt apud nos night of the living dead.',
-    image: 'https://source.unsplash.com/random/700x300',
-    url: 'https://source.unsplash.com/random/700x300',
-    tags: ['React', 'Firebase', 'CSS'],
-    likesCount: 3,
+    title: 'Redux Notes App',
+    description: `Patika.dev üzerinde bulunan Redux modülünün ilk ödevi olan 'Notes App' projesi. Uygulamada kullanıcıların notlarını ekleyebilir, düzenleyebilir veya silebilir. Eklenen notları arasında arama alanını kullanarak arama yapabilirsiniz. Notlara tanımlı sekiz renk arasından atama yapabilirsiniz. Eklenen notlar kullanıcıların internet tarayıcılarında saklanır. `,
+    image:
+      'https://github.com/sametkoyuncu/redux-notes-app/raw/master/public/screenshots/notlar.png?raw=true',
+    url: 'https://redux-notes-sk.netlify.app/',
+    githubUrl: 'https://github.com/sametkoyuncu/redux-notes-app',
+    tags: ['React', 'Redux', 'Mui.js'],
+    likesCount: 170,
   },
 ]
 
@@ -89,7 +95,7 @@ const Projects = () => {
         <Title>Son projelerime göz atın</Title>
 
         <Grid container spacing={2}>
-          {blogs.map((blog, index) => (
+          {projects.map((blog, index) => (
             <Grid item xs={12} sm={6} md={3} key={blog.title}>
               <Card key={index} blog={blog} />
             </Grid>
