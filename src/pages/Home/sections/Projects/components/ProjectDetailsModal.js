@@ -49,7 +49,7 @@ const style = {
   p: 2,
 }
 
-export default function BlogDetailsModal({ blog, ActionLink }) {
+export default function BlogDetailsModal({ project, ActionLink }) {
   const [open, setOpen] = React.useState(false)
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
@@ -66,7 +66,7 @@ export default function BlogDetailsModal({ blog, ActionLink }) {
         <Box sx={style}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={4}>
-              <Image src={blog.image} alt={blog.title} />
+              <Image src={project.image} alt={project.title} />
             </Grid>
             <Grid item xs={12} md={8} px={1}>
               <Box
@@ -76,7 +76,7 @@ export default function BlogDetailsModal({ blog, ActionLink }) {
                   justifyContent: 'space-between',
                 }}
               >
-                <CardTitle>{blog.title}</CardTitle>
+                <CardTitle>{project.title}</CardTitle>
                 <IconButton
                   aria-label="close"
                   sx={{ width: '32px', height: '32px' }}
@@ -86,8 +86,8 @@ export default function BlogDetailsModal({ blog, ActionLink }) {
                 </IconButton>
               </Box>
               <Box>
-                <CardDescription>{blog.description}</CardDescription>
-                <Tags tags={blog.tags} />
+                <CardDescription>{project.description}</CardDescription>
+                <Tags tags={project.tags} />
               </Box>
               <Box
                 sx={{
@@ -103,12 +103,12 @@ export default function BlogDetailsModal({ blog, ActionLink }) {
                     <LikeIcon>
                       <ThumbUpAltOffIcon />
                     </LikeIcon>
-                    &nbsp;{blog.likesCount}
+                    &nbsp;{project.likesCount}
                   </LikeSpan>
                 </Box>
                 <Box>
                   <LinkButton
-                    href={blog.url}
+                    href={project.url}
                     target="_blank"
                     rel="noreferrer"
                     sx={{ marginRight: '5px' }}
@@ -117,7 +117,7 @@ export default function BlogDetailsModal({ blog, ActionLink }) {
                     Önizleme
                   </LinkButton>
                   <LinkButton
-                    href={blog.githubUrl}
+                    href={project.githubUrl}
                     target="_blank"
                     rel="noreferrer"
                   >

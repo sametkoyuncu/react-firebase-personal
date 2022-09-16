@@ -80,38 +80,42 @@ const ActionLink = styled('a')({
   },
 })
 
-const Card = ({ blog }) => {
+const Card = ({ project }) => {
   return (
     <Box
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-between',
         maxWidth: { xs: '85%', sm: '315px' },
         mx: 'auto',
-        height: '400px',
-        padding: '10px',
-        boxShadow,
-        borderRadius: borderRadiusForCard,
       }}
     >
-      <div>
-        <Image src={blog.image} alt={blog.title} />
-        <CardTitle>{blog.title}</CardTitle>
-        <CardDescription>
-          {`${blog.description.slice(0, 100)}...`}
-        </CardDescription>
-        <Tags tags={blog.tags} />
+      <Image src={project.image} alt={project.title} />
+      <div
+        style={{
+          padding: '15px',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+        }}
+      >
+        <div>
+          <CardTitle>{project.title}</CardTitle>
+          <CardDescription>
+            {`${project.description.slice(0, 100)}...`}
+          </CardDescription>
+          <Tags tags={project.tags} />
+        </div>
+        <Actions>
+          <ActionIconSpan>
+            <ActionIcon href={'#projects'}>
+              <ThumbUpAltOffIcon />
+            </ActionIcon>{' '}
+            &nbsp;{project.likesCount}
+          </ActionIconSpan>
+          <ProjectDetailsModal project={project} ActionLink={ActionLink} />
+        </Actions>
       </div>
-      <Actions>
-        <ActionIconSpan>
-          <ActionIcon href={'#projects'}>
-            <ThumbUpAltOffIcon />
-          </ActionIcon>{' '}
-          &nbsp;{blog.likesCount}
-        </ActionIconSpan>
-        <ProjectDetailsModal blog={blog} ActionLink={ActionLink} />
-      </Actions>
     </Box>
   )
 }

@@ -12,6 +12,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite'
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Projects from './sections/Projects'
+import Blog from './sections/Blog'
 import Contact from './sections/Contact'
 
 // hooks
@@ -47,6 +48,9 @@ const Home = () => {
           <About />
         </Box>
         <Projects />
+      </Container>
+      <Container>
+        <Blog />
       </Container>
       <Container
         id="contact"

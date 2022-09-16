@@ -1,35 +1,12 @@
 // mui.js components
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
-import { styled } from '@mui/system'
+import SectionAction from '../../../../components/SectionAction'
 
 // components
 import SectionContainer from '../../../../components/SectionContainer'
+import SectionTitle from '../../../../components/SectionTitle'
 import Card from './components/Card'
-
-// styled components
-const Title = styled('h2')({
-  fontSize: '1.75rem',
-  fontWeight: '700',
-  marginBottom: '30px',
-  padding: '0',
-  fontFamily: '"Roboto Slab", sans-serif',
-  color: 'rgb(52, 71, 103)',
-})
-
-const ActionLink = styled('a')({
-  margin: '30px auto',
-  fontSize: '1rem',
-  fontWeight: '400',
-  color: 'rgb(52, 71, 103)',
-  fontFamily: '"Roboto Slab", sans-serif',
-  transition: 'all 0.3s ease-in-out',
-  textDecoration: 'none',
-  '&:hover': {
-    color: 'rgb(52, 71, 103)',
-    textDecoration: 'underline',
-  },
-})
 
 // data
 const projects = [
@@ -91,23 +68,23 @@ const Projects = () => {
           maxWidth: { xs: '95%', md: '85%' },
         }}
       >
-        <Title>Son projelerime göz atın</Title>
+        <SectionTitle>Son projelerime göz atın</SectionTitle>
 
         <Grid container spacing={2}>
-          {projects.map((blog, index) => (
-            <Grid item xs={12} sm={6} md={3} key={blog.title}>
-              <Card key={index} blog={blog} />
+          {projects.map((project, index) => (
+            <Grid item xs={12} md={6} lg={3} key={project.title}>
+              <Card key={index} project={project} />
             </Grid>
           ))}
         </Grid>
 
-        <ActionLink
+        <SectionAction
           href="https://github.com/sametkoyuncu?tab=repositories"
           target="_blank"
           rel="noreferrer"
         >
           Daha fazlası için tıklayınız..
-        </ActionLink>
+        </SectionAction>
       </Box>
     </SectionContainer>
   )
