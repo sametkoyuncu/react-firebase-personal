@@ -23,6 +23,7 @@ const Image = styled('img')({
   height: '175px',
   objectFit: 'cover',
   display: 'inline-block',
+  border: '1px solid rgb(52, 71, 103, .1)',
   borderRadius: borderRadiusForCard,
   boxShadow,
 })
@@ -85,19 +86,26 @@ const Card = ({ blog }) => {
       sx={{
         display: 'flex',
         flexDirection: 'column',
+        justifyContent: 'space-between',
         maxWidth: { xs: '85%', sm: '315px' },
         mx: 'auto',
+        height: '400px',
+        padding: '10px',
+        boxShadow,
+        borderRadius: borderRadiusForCard,
       }}
     >
-      <Image src={blog.image} alt={blog.title} />
-      <CardTitle>{blog.title}</CardTitle>
-      <CardDescription>
-        {`${blog.description.slice(0, 100)}...`}
-      </CardDescription>
-      <Tags tags={blog.tags} />
+      <div>
+        <Image src={blog.image} alt={blog.title} />
+        <CardTitle>{blog.title}</CardTitle>
+        <CardDescription>
+          {`${blog.description.slice(0, 100)}...`}
+        </CardDescription>
+        <Tags tags={blog.tags} />
+      </div>
       <Actions>
         <ActionIconSpan>
-          <ActionIcon href={blog.url}>
+          <ActionIcon href={'#projects'}>
             <ThumbUpAltOffIcon />
           </ActionIcon>{' '}
           &nbsp;{blog.likesCount}

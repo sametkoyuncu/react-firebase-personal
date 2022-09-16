@@ -41,7 +41,7 @@ const About = () => {
           Merhaba ben Samet. Bilgisayar mühendisliği mezunu, küçükbaş
           hayvanlıkla uğraşan biriyim. Gündüzleri hayvanlara bakıp, akşamları
           yazılım alanında kendimi geliştirmeye çalışıyorum. Bu aralar{' '}
-          <Bold>React.js</Bold> ile frontend, <Bold>Node.js</Bold> ile backend
+          <Bold>React.js</Bold> ile frontend, <Bold>Swift</Bold> ile iOS
           projeleri geliştiriyorum.
         </Description>
         <Socials />
