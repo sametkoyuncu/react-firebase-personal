@@ -15,27 +15,12 @@ import Card from './components/Card'
 const blogs = [
   {
     id: 1,
-    title: 'title here',
-    body: 'body here',
+    title: 'Swift’te ‘Delegate Design Pattern’ Nedir? Nasıl Kullanılır?',
+    body: 'Merhaba, arkadaşlar 👋. Bu yazımda sizlere ‘Delegate Desing Pattern’ nedir ve nasıl kullanılır onu anlatacağım.',
     imageUrl:
-      'https://github.com/sametkoyuncu/redux-notes-app/raw/master/public/screenshots/notlar.png',
-    actionUrl: 'url here',
-  },
-  {
-    id: 2,
-    title: 'title here',
-    body: 'body here',
-    imageUrl:
-      'https://github.com/sametkoyuncu/redux-notes-app/raw/master/public/screenshots/notlar.png',
-    actionUrl: 'url here',
-  },
-  {
-    id: 3,
-    title: 'title here',
-    body: 'body here',
-    imageUrl:
-      'https://github.com/sametkoyuncu/redux-notes-app/raw/master/public/screenshots/notlar.png',
-    actionUrl: 'url here',
+      'https://cdn-images-1.medium.com/max/1600/1*XkTAs9_CULzvLT4YDTwrFg.png',
+    actionUrl:
+      'https://medium.com/@sametkoyuncu/swiftte-the-delegate-design-pattern-nedir-nasıl-kullanılır-3e2cd9ea7019',
   },
 ]
 

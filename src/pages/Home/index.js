@@ -59,7 +59,7 @@ const Home = () => {
           backgroundColor: 'rgba(255, 255, 255, 0.95)',
           borderRadius: borderRadiusForCard,
           minHeight: '300px',
-          marginBottom: '75px',
+          margin: '75px auto',
           boxShadow,
           padding: '0px !important',
         }}

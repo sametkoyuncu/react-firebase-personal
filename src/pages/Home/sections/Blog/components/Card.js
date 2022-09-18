@@ -28,17 +28,18 @@ const Image = styled('img')({
   boxShadow,
 })
 
-const Button = styled('button')({
+const Button = styled('a')({
   fontSize: '1rem',
+  display: 'inline-block',
   fontWeight: '400',
-  padding: '10px 15px',
+  padding: '15px 20px',
   margin: '0 auto',
-  marginTop: '10px',
+  marginTop: '20px',
   border: 'none',
   cursor: 'pointer',
   boxShadow,
   borderRadius: borderRadiusForCard,
-  backgroundColor: 'purple',
+  backgroundColor: 'rgba(123, 128, 154, .1)',
   color: 'rgb(123, 128, 154)',
   transition: 'all 0.3s ease-in-out',
   fontFamily: '"Roboto Slab", sans-serif',
@@ -66,7 +67,9 @@ const Card = ({ blog }) => {
       <div style={{ padding: '10px' }}>
         <CardTitle>{blog.title}</CardTitle>
         <CardDescription>{blog.body}</CardDescription>
-        <Button>Devamını oku..</Button>
+        <Button href={blog.actionUrl} target="_blank">
+          Devamını oku..
+        </Button>
       </div>
     </Box>
   )
