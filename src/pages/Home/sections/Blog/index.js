@@ -25,7 +25,7 @@ const blogs = [
   {
     id: 2,
     title: 'Değişken Boyuttaki İçeriklerle UIScrollView Kullanımı',
-    body: 'Merhaba, arkadaşlar. Bugün, çözümünü bulana kadar epey vaktimi alan bir konuyu sizlerle paylaşmak istiyorum. Konumuz, “farklı boyutlardaki içerikler için UIScrollView’i nasıl kullanırız?”.',
+    body: 'Merhaba, arkadaşlar. Bugün, çözümünü bulana kadar epey vaktimi alan bir konuyu sizlerle paylaşmak istiyorum.”.',
     imageUrl: 'https://miro.medium.com/max/1400/1*L-mrqXrxtsjVHB8wuh2BvQ.png',
     actionUrl:
       'https://medium.com/@sametkoyuncu/de%C4%9Fi%C5%9Fken-boyuttaki-i%CC%87%C3%A7eriklerle-uiscrollview-kullan%C4%B1m%C4%B1-880d3cbbb631',
