@@ -7,7 +7,7 @@ import Box from '@mui/material/Box'
 // my components
 import CardTitle from '../../../../../components/CardTitle'
 import CardDescription from '../../../../../components/CardDescription'
-import Tags from '../../../../../components/Tags'
+//import Tags from '../../../../../components/Tags'
 
 // assets
 import {
