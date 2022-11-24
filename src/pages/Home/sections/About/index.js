@@ -38,11 +38,11 @@ const About = () => {
       <Box sx={{ marginTop: '75px' }}>
         <Title>Samet Koyuncu</Title>
         <Description>
-          Merhaba ben Samet. Bilgisayar mühendisliği mezunu, küçükbaş
-          hayvanlıkla uğraşan biriyim. Gündüzleri hayvanlara bakıp, akşamları
-          yazılım alanında kendimi geliştirmeye çalışıyorum. Bu aralar{' '}
-          <Bold>React.js</Bold> ile frontend, <Bold>Swift</Bold> ile iOS
-          projeleri geliştiriyorum.
+          Merhaba ben Samet. Bilgisayar mühendisliği mezunu, iOS Geliştirici ve
+          küçükbaş hayvancılıkla uğraşan biriyim. Hafta içleri yazılım alanında
+          çalışıp, hafta sonları koyunlara bakıyorum. İşim gereği çoğunlukla{' '}
+          <Bold>Swift</Bold> dili ile geliştirmeler yapsam da{' '}
+          <Bold>JavaScript (❤️)</Bold> ile uğraşmayı seviyorum..
         </Description>
         <Socials />
       </Box>

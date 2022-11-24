@@ -30,6 +30,14 @@ const blogs = [
     actionUrl:
       'https://medium.com/@sametkoyuncu/de%C4%9Fi%C5%9Fken-boyuttaki-i%CC%87%C3%A7eriklerle-uiscrollview-kullan%C4%B1m%C4%B1-880d3cbbb631',
   },
+  {
+    id: 3,
+    title: 'SideTown Nedir? Nasıl Kullanılır?',
+    body: 'Merhaba, arkadaşlar. Bugün sizlere iOS için yayınladığım ilk paketi tanıtacağım. Paketin adı SideTown. Kullanım amacı iOS uygulamalarına yandan açılır (side/hamburger) menü ekleme işini kolaylaştırmak.',
+    imageUrl: 'https://miro.medium.com/max/1400/1*VlbmOlPk_IihNMoEF6sHkQ.webp',
+    actionUrl:
+      'https://medium.com/@sametkoyuncu/sidetown-nedir-nasıl-kullanılır-84545c5d1fd1',
+  },
 ]
 
 const Blog = () => {
