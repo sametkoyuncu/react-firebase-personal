@@ -33,7 +33,7 @@ const blogs = [
   {
     id: 3,
     title: 'SideTown Nedir? Nasıl Kullanılır?',
-    body: 'Merhaba, arkadaşlar. Bugün sizlere iOS için yayınladığım ilk paketi tanıtacağım. Paketin adı SideTown. Kullanım amacı iOS uygulamalarına yandan açılır (side/hamburger) menü ekleme işini kolaylaştırmak.',
+    body: 'Merhaba, arkadaşlar. Bugün sizlere iOS için yayınladığım ilk paketi tanıtacağım. Paketin adı SideTown. Kullanım amacı iOS uygulamalarına yandan açılır..',
     imageUrl: 'https://miro.medium.com/max/1400/1*VlbmOlPk_IihNMoEF6sHkQ.webp',
     actionUrl:
       'https://medium.com/@sametkoyuncu/sidetown-nedir-nasıl-kullanılır-84545c5d1fd1',
