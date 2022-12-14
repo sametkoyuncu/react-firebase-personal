@@ -2,7 +2,7 @@
 import { Box } from '@mui/material'
 
 // assets
-import Image from '../../../../../assets/images/avatar.png'
+import Image from '../../../../../assets/images/avatar2.png'
 import { boxShadow } from '../../../../../assets/theme/baseStyles'
 
 const Avatar = () => {
