@@ -17,7 +17,7 @@ const blogs = [
     id: 4,
     title:
       'RouteTown: iOS Uygulamalarınız İçin Güçlü ve Esnek Navigasyon Yönetimi',
-    body: 'Merhabalar, bu yazımda sizlere son geliştirdiğim bir kütüphaneden bahsedeceğim: RouteTown. Bu kütüphane, iOS uygulamalarında ekran yönlendirmelerini kolayca yönetmeyi amaçlar..',
+    body: 'Merhabalar, bu yazımda sizlere son geliştirdiğim bir kütüphaneden..',
     imageUrl: 'https://miro.medium.com/max/1400/1*ZkTGSWndPXqA22szh1Jl-A.webp',
     actionUrl:
       'https://medium.com/@sametkoyuncu/routetown-ios-uygulamalarınız-i̇çin-güçlü-ve-esnek-navigasyon-yönetimi-bdde3c9a129c',

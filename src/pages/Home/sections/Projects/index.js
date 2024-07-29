@@ -11,6 +11,27 @@ import Card from './components/Card'
 // data
 const projects = [
   {
+    title: 'RouteTown',
+    description:
+      'RouteTown, iOS uygulamalarında ekran yönlendirmelerini kolayca yönetmeyi amaçlar.',
+    image: 'https://miro.medium.com/max/1400/1*ZkTGSWndPXqA22szh1Jl-A.webp',
+    url: 'https://medium.com/@sametkoyuncu/routetown-ios-uygulamalar%C4%B1n%C4%B1z-i%CC%87%C3%A7in-g%C3%BC%C3%A7l%C3%BC-ve-esnek-navigasyon-y%C3%B6netimi-bdde3c9a129c',
+    githubUrl: 'https://github.com/sametkoyuncu/RouteTown',
+    tags: ['Swift', 'UIKit', 'Router'],
+    likesCount: 47,
+  },
+  {
+    title: 'SideTown',
+    description:
+      'ColorTown, kullanıcıların sisteme kayıt olup rastgele renk, renk gradyanı veya renk paleti oluşturabileceği ve bu renkleri diğer kullanıcılarla paylaşabileceği bir uygulamadır.',
+    image: 'https://miro.medium.com/max/1400/1*VlbmOlPk_IihNMoEF6sHkQ.webp',
+    url: 'https://medium.com/@sametkoyuncu/sidetown-nedir-nasıl-kullanılır-84545c5d1fd1',
+    githubUrl: 'https://github.com/sametkoyuncu/SideTown',
+    tags: ['Swift', 'UIKit'],
+    likesCount: 77,
+  },
+  // ---
+  {
     title: 'ColorTown App',
     description:
       'ColorTown, kullanıcıların sisteme kayıt olup rastgele renk, renk gradyanı veya renk paleti oluşturabileceği ve bu renkleri diğer kullanıcılarla paylaşabileceği bir uygulamadır.',
