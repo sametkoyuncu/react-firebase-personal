@@ -35,7 +35,7 @@ const iconStyles = { width: '32px', height: '32px' }
 const accounts = [
   {
     name: 'Github',
-    url: 'https://github.com/',
+    url: 'https://github.com/sametkoyuncu',
     icon: <GitHubIcon sx={iconStyles} />,
   },
   {
